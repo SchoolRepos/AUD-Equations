@@ -2,6 +2,7 @@
 
 ## Andreas: 
 
+- [ ] CSV einlesen
 - [ ] Formel finden helfen und das ganze testen
 
 ## Elias:
