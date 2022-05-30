@@ -36,8 +36,13 @@ public class Calculator
             //fill A of row
             for (int j = 1; j < i; j++)
             {
+                var sum = 0.0;
+                for (int k = 0; k < j; k++)
+                {
+                    sum += matrixA[i,k] * matrixB[k, j];
+                }
                 // 𝒂43 = (𝑐43 − 𝑎42 ⋅ 𝑏13)/𝑏33 
-                matrixA[i,j] = (matrixC[i,j] - matrixA[i,j-1] * matrixB[0,j] ) / matrixB[i-1,j];
+                matrixA[i,j] = (matrixC[i, j] - sum) / matrixB[j,j];
             }
             
             //fill B of row
