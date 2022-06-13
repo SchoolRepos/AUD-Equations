@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrizenRechnung", "MatrizenRechnung\MatrizenRechnung.csproj", "{810BC278-BE01-49CF-9A23-9047D8A778BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{810BC278-BE01-49CF-9A23-9047D8A778BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810BC278-BE01-49CF-9A23-9047D8A778BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810BC278-BE01-49CF-9A23-9047D8A778BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810BC278-BE01-49CF-9A23-9047D8A778BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAADACDB-2F1C-4471-8BB7-60CEFDF23B91}
+	EndGlobalSection
+EndGlobal
