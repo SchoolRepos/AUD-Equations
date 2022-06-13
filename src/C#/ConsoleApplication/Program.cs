@@ -5,8 +5,8 @@ using DefaultNamespace;
 
 Calculator calculator = new Calculator();
 
-//var matrixC = new Double[4, 4] { {2.0, 7.0, 1.0, 8.0}, {3.0, -2.0, 8.0, 13.0}, {1.0, 5.0, 2.82, 12.88}, {12.2, 37.7, 18.0, 80.4} };
-var matrixC = new Double[3, 3] { {2.0, 7.0, 1.0}, {3.0, -2.0, 8.0}, {1.0, 5.0, 3.0} };
+var matrixC = new Double[4, 4] { {2.0, 7.0, 1.0, 8.0}, {3.0, -2.0, 8.0, 13.0}, {1.0, 5.0, 2.82, 12.88}, {12.2, 37.7, 18.0, 80.4} };
+//var matrixC = new Double[3, 3] { {2.0, 7.0, 1.0}, {3.0, -2.0, 8.0}, {1.0, 5.0, 3.0} };
 var result = calculator.GetResult(matrixC);
 
 foreach (var matrix in result)

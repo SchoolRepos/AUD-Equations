@@ -29,7 +29,7 @@ public class Calculator
             matrixB[0,i] = matrixC[0,i];
         }
         
-        //second row
+        //for each row
         for (int i = 1; i < matrixC.GetLength(1); i++)
         {
             matrixA[i,0] = matrixC[i,0] / matrixB[0,0];
