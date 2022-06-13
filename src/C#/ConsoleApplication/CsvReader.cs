@@ -10,7 +10,7 @@ public class CsvReader
         {
             var line = lines[i];
             var values = line.Split(';');
-            for (int j = 0; j < values.Length; j++)
+            for (int j = 0; j < values.Length-1; j++)
             {
                 result[i,j] = Double.Parse(values[j]);
             }
