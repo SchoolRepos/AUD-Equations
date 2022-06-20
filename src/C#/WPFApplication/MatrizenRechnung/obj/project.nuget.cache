@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MU0x+uQBRev2C6d6uWtw16JHh5RKejDBE34BIa4CNkKScRVY+1pQEZwQceXUIAsCysBtGt2ZJmv2IZzhELhv0A==",
+  "dgSpecHash": "buFwvhULrxmzDmqVPr8eYKmKifr3JBZ2ui+Vf6gTCTzddA4ELoKOSfjIU//kZrGILaC4dWE7efzmX8yxOoZX7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sarah\\OneDrive\\Desktop\\MatrizenRechnung\\MatrizenRechnung\\MatrizenRechnung.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/elias/Documents/Schule/AUD/4.Klasse/AUD-3q4t10n5/src/C#/WPFApplication/MatrizenRechnung/MatrizenRechnung.csproj",
+  "expectedPackageFiles": [
+    "/home/elias/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.2/microsoft.aspnetcore.app.ref.6.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
