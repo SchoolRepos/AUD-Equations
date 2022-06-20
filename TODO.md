@@ -2,8 +2,8 @@
 
 ## Andreas: 
 
-- [ ] CSV einlesen
-- [ ] Formel finden helfen und das ganze testen
+- [x] Repository Struktur erstellen
+- [x] CSV einlesen
 
 ## Elias:
 
@@ -16,8 +16,8 @@
 
 ## Tim: 
 
-- [ ] Formel finden für größere Matrizen
+- [x] Formel finden für größere Matrizen
 
 ## Sarah: 
 
-- [ ] Frontend
+- [x] Frontend
