@@ -7,7 +7,8 @@
 
 ## Elias:
 
-- [ ] Formel finden für größere Matrizen
+- [x] Formel finden für größere Matrizen
+- [x] Beispiele entwerfen (Files im .csv Format)
 
 ## Tobias: 
 
