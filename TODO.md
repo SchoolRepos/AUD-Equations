@@ -12,7 +12,8 @@
 
 ## Tobias: 
 
-- [ ] Formel mit Matrizen der Größe 3 hardcoden
+- [x] Formel mit Matrizen der Größe 3 hardcoden
+- [x] Projekt in Go umsetzen
 
 ## Tim: 
 
