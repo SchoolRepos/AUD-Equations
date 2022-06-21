@@ -19,11 +19,25 @@ func main() {
 		log.Fatal("Error reading CSV:", err)
 	}
 
-	fmt.Println("3x3 Result:")
-	fmt.Println(CalculateAAndB3By3(C))
+	A, B := CalculateAAndBXByX(C)
+	fmt.Println("A:")
+	printMatrix(A)
+	fmt.Println()
+	fmt.Println("B:")
+	printMatrix(B)
+}
 
-	fmt.Println("X*X Result:")
-	fmt.Println(CalculateAAndBXByX(C))
+func printMatrix(matrix [][]float64) {
+	for _, row := range matrix {
+		fmt.Print("[")
+		for idx, col := range row {
+			fmt.Printf("%.2f", col)
+			if idx != len(row)-1 {
+				fmt.Print(" ")
+			}
+		}
+		fmt.Println("]")
+	}
 }
 
 func CalculateAAndB3By3(C [][]float64) (A, B [][]float64) {
