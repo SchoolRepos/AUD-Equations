@@ -26,14 +26,15 @@ This project consists of the following parts:
 
   Run the program provided in the latest release as follows: `./equations[.exe] [pathToCsvFile]`
 
-**Not functional:**
+* ~~**C# WPF application**~~ - **not functional**
 
-* *C# WPF application - The frontend is not in a functional state and should not be used by now - please refer to the console / go application for a functional experience.* 
+  The frontend is not in a functional state and should not be used by now - please refer to the console / go application for a functional experience. 
 
 ## CSV Format
 
-The csv files need to be in the following format:
+The input csv file needs to follow these rules:
 
+* The matrix can be of any size, but it must be square (eg. 3x3, 4x4, ...)
 * Numbers have to be separated by a semicolon ( ; )
 * At the end of the each line there also needs to be a semicolon ( ; )
 
