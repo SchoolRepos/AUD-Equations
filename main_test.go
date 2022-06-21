@@ -5,32 +5,30 @@ import (
 	"testing"
 )
 
-func TestCalculateAAndB(t *testing.T) {
-	type args struct {
-		C [][]int
+func TestCalculateAAndB3By3(t *testing.T) {
+	C := [][]float64{
+		{2, 7, 1},
+		{3, -2, 8},
+		{1, 5, 3},
 	}
-	tests := []struct {
-		name    string
-		args    args
-		wantA   [][]int
-		wantB   [][]int
-		wantErr bool
-	}{
-		// TODO: Add test cases.
+	wantA := [][]float64{
+		{1, 0, 0},
+		{1.5, 1, 0},
+		{0.5, -0.12, 1},
 	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			gotA, gotB, err := CalculateAAndB(tt.args.C)
-			if (err != nil) != tt.wantErr {
-				t.Errorf("CalculateAAndB() error = %v, wantErr %v", err, tt.wantErr)
-				return
-			}
-			if !reflect.DeepEqual(gotA, tt.wantA) {
-				t.Errorf("CalculateAAndB() gotA = %v, want %v", gotA, tt.wantA)
-			}
-			if !reflect.DeepEqual(gotB, tt.wantB) {
-				t.Errorf("CalculateAAndB() gotB = %v, want %v", gotB, tt.wantB)
-			}
-		})
+	wantB := [][]float64{
+		{2, 7, 1},
+		{0, -12.5, 6.5},
+		{0, 0, 3.28},
+	}
+	haveA, haveB, err := CalculateAAndB3By3(C)
+	if err != nil {
+		t.Errorf("CalculateAAndB3By3(%v) returned error: %v", C, err)
+	}
+	if !reflect.DeepEqual(haveA, wantA) {
+		t.Errorf("CalculateAAndB3By3(%v) returned A %v, want %v", C, haveA, wantA)
+	}
+	if !reflect.DeepEqual(haveB, wantB) {
+		t.Errorf("CalculateAAndB3By3(%v) returned B %v, want %v", C, haveB, wantB)
 	}
 }

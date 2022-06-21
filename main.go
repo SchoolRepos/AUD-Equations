@@ -1,17 +1,24 @@
 package main
 
-import "errors"
-
 func main() {
 
 }
 
-func CalculateAAndB(C [][]int) (A, B [][]int, err error) {
-	// check for square matrix
-	if len(C) != len(C[0]) {
-		err = errors.New("C is not a square matrix")
-		return
-	}
+func CalculateAAndB3By3(C [][]float64) (A, B [][]float64, err error) {
+	A = [][]float64{{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}
+	B = [][]float64{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}
+
+	B[0][0] = C[0][0]
+	B[0][1] = C[0][1]
+	B[0][2] = C[0][2]
+
+	A[1][0] = C[1][0] / B[0][0]
+	B[1][1] = C[1][1] - A[1][0]*B[0][1]
+	B[1][2] = C[1][2] - A[1][0]*B[0][2]
+
+	A[2][0] = C[2][0] / B[0][0]
+	A[2][1] = C[2][1] / B[0][1]
+	B[2][2] = C[2][2] - A[2][0]*B[0][2] - A[2][1]*B[1][2]
 
 	return
 }
