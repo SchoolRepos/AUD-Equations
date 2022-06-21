@@ -120,7 +120,7 @@ func ReadCSV(path string) ([][]float64, error) {
 			if strings.TrimSpace(part) == "" {
 				continue
 			}
-			num, err := strconv.ParseFloat(strings.ReplaceAll(part, ",", "."), 64)
+			num, err := strconv.ParseFloat(strings.TrimSpace(strings.ReplaceAll(part, ",", ".")), 64)
 			if err != nil {
 				return matrix, err
 			}
