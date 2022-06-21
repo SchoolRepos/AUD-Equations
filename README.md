@@ -24,7 +24,7 @@ This project consists of the following parts:
 
 * **Go application / executables**
 
-  Run the program provided in the latest release as follows: `./equations[.exe] [pathToCsvFile]`
+  Run the program provided in the [latest release](https://github.com/SchoolRepos/AUD-Equations/releases) as follows: `./equations[.exe] [pathToCsvFile]`
 
 * ~~**C# WPF application**~~ - **not functional**
 
