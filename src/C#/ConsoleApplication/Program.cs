@@ -7,8 +7,10 @@ Calculator calculator = new Calculator();
 
 while (true)
 {
+    Console.WriteLine("Input path for result csv: ");
     var matrixC = CsvReader.readCSV(Console.ReadLine());
     var result = calculator.GetResult(matrixC);
+    Console.WriteLine("Result: ");
 
     foreach (var matrix in result)
     {
