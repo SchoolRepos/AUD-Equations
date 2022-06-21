@@ -21,9 +21,10 @@ Console.WriteLine("The input is a matrix in the file format .csv\nPlease make su
 
 while (true)
 {
-    Console.Write("Enter the path of the .csv matrix file: ");
+    Console.WriteLine("Input path for source .csv: ");
     var matrixC = CsvReader.readCSV(Console.ReadLine());
     var result = calculator.GetResult(matrixC);
+    Console.WriteLine("Result: ");
 
     foreach (var matrix in result)
     {
