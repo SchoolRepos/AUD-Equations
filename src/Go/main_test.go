@@ -60,6 +60,23 @@ func TestCalculateAAndBXByX(t *testing.T) {
 				{0, 0, 3.28},
 			},
 		},
+		{
+			C: [][]float64{
+				{3.7, 9.2, 4.7},
+				{21.09, 54.84, 31.99},
+				{4.44, 31.2, 56.22},
+			},
+			WantA: [][]float64{
+				{1, 0, 0},
+				{5.7, 1, 0},
+				{1.2, 8.4, 1},
+			},
+			WantB: [][]float64{
+				{3.7, 9.2, 4.7},
+				{0, 2.4, 5.2},
+				{0, 0, 6.9},
+			},
+		},
 	}
 	for _, currentTestCase := range testCases {
 		haveA, haveB := CalculateAAndBXByX(currentTestCase.C)
